@@ -1,9 +1,10 @@
 # 课程制作步骤
-1. 根据分工，细化本文档中下面的Course Outline
-2. 参照part-1/lesson-1目录，新建课程目录
-3. 编写代码、完成markdown、ppt教案+逐字稿(可先使用google，确认终稿后，再导出放到本仓库目录中)
-4. 将资源放到本仓库目录中，ppt教案+逐字稿是必须的；教案中如果有代码，也是必须的
-5. 找其他同事协助验证课程
+1. 阅读[PPT参考标准](https://docs.google.com/document/d/1zh1jLr3lVVsnWOmfU_ynVURyAJs4U132/edit)
+2. 根据分工，细化本文档中下面的Course Outline
+3. 参照part-1/lesson-1目录，新建课程目录
+4. 编写代码、完成markdown、ppt教案+逐字稿(可先使用google，确认终稿后，再导出放到本仓库目录中)
+5. 将资源放到本仓库目录中，ppt教案+逐字稿是必须的；教案中如果有代码，也是必须的
+6. 找其他同事协助验证课程
 
 
 # sui-course-2023
