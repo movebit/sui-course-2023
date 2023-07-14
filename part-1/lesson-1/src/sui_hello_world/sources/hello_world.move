@@ -1,18 +1,22 @@
 module hello_world::hello_world {
+
+    use std::string::{Self, String};
     use sui::object::{Self, UID};
     use sui::transfer;
     use sui::tx_context::{Self, TxContext};
 
-    struct Counter has key {
+    struct HelloWorldObject has key {
         id: UID,
-        value: u64,
+        text: String
     }
 
-    public entry fun create(value: u64, ctx: &mut TxContext) {
-        let counter= Counter {
+    public entry fun mint(ctx: &mut TxContext) {
+        let object = HelloWorldObject {
             id: object::new(ctx),
-            value
+            text: string::utf8(b"Hello World!")
         };
-        transfer::transfer(counter, tx_context::sender(ctx));
+        transfer::transfer(object, tx_context::sender(ctx));
     }
+
 }
+
