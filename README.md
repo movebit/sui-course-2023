@@ -20,6 +20,33 @@ The original course outline is [here](https://docs.google.com/document/d/16L0k0K
     - [Intro to Sui Objects](./part-2/lesson-1/lesson-1.md)
     - [Ownership](./part-2/lesson-1/lesson-1.md)
 
+
+## PPT
+part 1 :  https://docs.google.com/presentation/d/1-HTFHQZvlOjlIuvBBb2wxLCmwkHqo1Ojh_LTqM4bwr8/edit#slide=id.g226b25a2cfd_0_528
+https://docs.google.com/presentation/d/1yoz0-zVDgYk1GVPRGK68SzU2WX9KQUzMyuFafOsWzjA/edit#slide=id.g24f3b7fa288_3_692
+https://docs.google.com/presentation/d/1szUSRPjUpmz9fpgtwBpbx6TsO_6I4QOu2ziXK_MkJC8/edit#slide=id.g23e97cfeaf5_0_1
+https://docs.google.com/presentation/d/1ghAe_vsLv3CbJk_bbPl9dAfrcUyU5LebiZoKcZS9JeU/edit#slide=id.g251145df4f9_0_671
+
+Part II slides  https://docs.google.com/presentation/d/1ZWmPd5vz6B-5fu4TrDra9D5RNw1nghtWVYe6f3ZmtjY/edit?usp=sharing
+https://docs.google.com/presentation/d/1JybGMbkgH1KD32G_F9um9_FilMa-EFhUpaG418QIAFU/edit#slide=id.g2514c5c11c2_2_74
+https://docs.google.com/presentation/d/1NO7U4DBjGo0kjHo2X-cUfU30pdimPiXuGfogu62PjwI/edit#slide=id.g226ebe924b8_0_0
+https://docs.google.com/presentation/d/14vAr2LGvrbs6NwFvtjRqFrsGrab8hRyE-Et1OaNyH1U/edit?usp=sharing
+
+Part III
+https://docs.google.com/presentation/d/1tIejWhmvma4Hf4CbZfi_mljTpwnopQNQUG12APgNreo/edit#slide=id.g22ab099ac78_0_5
+
+Part IV https://docs.google.com/presentation/d/1C7dOcSJUnyraGjX0Rv5hzqudA0TuVfoxnku969ZWI00/edit?usp=sharing 应该是这个链接
+
+Part V https://docs.google.com/presentation/d/1nimrx4lzWGFPh5UIkBNfD6EXHWcX5gqQVUjSYkMZU5M/edit#slide=id.g22ebe9d6eec_1_10
+
+Part 6-1 https://docs.google.com/presentation/d/1ud5XQzWC3kcy-IBWX8QGyZa_0K1nmcFi2wdSGs42B_U/edit#slide=id.g2514c5c11c2_2_63
+Part 6-2 https://docs.google.com/presentation/d/1hArdMpYYJreIi5Zyk_7EZ9_0b396nqjVAvVIniL9KMQ/edit#slide=id.g2514c5c11c2_2_63
+Part 6-3 https://docs.google.com/presentation/d/1ST6igQFH-0bRNmp2_kr8oCnj4hBqwbRS16qRJz0xiPs/edit#slide=id.g1e4a3659359_0_0
+
+Part 7 https://docs.google.com/presentation/d/1lTlk37TvkBtCl2eqAYtYVjWrJ3lQPZ1bbAiapY3B8Ic/edit#slide=id.g22ebe9d6eec_1_1049
+
+
+
 ## Course Resources
 - [sui-move-intro-course](https://github.com/sui-foundation/sui-move-intro-course)
 - [encode-sui-educate](https://github.com/sui-foundation/encode-sui-educate)
