@@ -49,7 +49,6 @@ module subscribe::subscribe {
         remaining_amount: u64,  
         last_withdraw_time: u64,
         closed: bool,           
-        acc_paused_time: u64,
         reverse: Coin<SUI>
     }
 
@@ -140,7 +139,6 @@ module subscribe::subscribe {
             withdrawn_amount: 0u64,
             remaining_amount: 0u64,
             closed: false,
-            acc_paused_time: 0,
             reverse: coin::zero<SUI>(ctx)
         };
 
@@ -154,8 +152,7 @@ module subscribe::subscribe {
             stop_time,
             create_at: current_time,
         });
-        // event::em
-
+        
         subscribe.remaining_amount = deposit_amount;
         coin::join<SUI>(&mut subscribe.reverse, coin::split(deposit_coin, deposit_amount, ctx));
 
@@ -232,7 +229,6 @@ module subscribe::subscribe {
 
         let return_coin = withdraw_(&mut subscribe, current_time, ctx);
 
-        subscribe.acc_paused_time = 0;
         subscribe.remaining_amount = 0;
 
         let Subscribe {
@@ -249,7 +245,6 @@ module subscribe::subscribe {
             withdrawn_amount: _,  
             remaining_amount: _,  
             closed: _,           
-            acc_paused_time: _,
             reverse: reverse
          } = subscribe;
 
@@ -271,7 +266,7 @@ module subscribe::subscribe {
         };
 
         let (withdraw_amount, withdraw_time) = if (current_time < subscribe.stop_time) {
-            (subscribe.rate_per_interval * delta / 1000, subscribe.last_withdraw_time + delta * subscribe.interval + subscribe.acc_paused_time)
+            (subscribe.rate_per_interval * delta / 1000, subscribe.last_withdraw_time + delta * subscribe.interval)
         } else {
             (subscribe.remaining_amount, subscribe.stop_time)
         };
@@ -280,7 +275,6 @@ module subscribe::subscribe {
         subscribe.withdrawn_amount = subscribe.withdrawn_amount + withdraw_amount;
         subscribe.remaining_amount = subscribe.remaining_amount - withdraw_amount;
         subscribe.last_withdraw_time = withdraw_time;
-        subscribe.acc_paused_time = 0;
 
         let coin = coin::split(&mut subscribe.reverse, withdraw_amount, ctx);
         event::emit(WithdrawEvent {

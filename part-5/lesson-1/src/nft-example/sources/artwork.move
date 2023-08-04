@@ -147,7 +147,6 @@ module nft_in_sui::artwork {
             assert!(creator(&nft) == &test_addr, 0);
             assert!(url(&nft) == &url::new_unsafe_from_bytes(b"https://wallpaperaccess.com/full/2648080.jpg"), 0);
             
-
             test_scenario::return_to_sender(test, nft);
         };
 
