@@ -10,7 +10,7 @@ module fungible_tokens::SCC {
     fun init(witness: SCC, ctx: &mut TxContext) {
         let (treasury_cap, metadata) = coin::create_currency<SCC>(
             witness, 
-            2, 
+            9, 
             b"SCC", 
             b"Sui Course Coin", 
             b"", 

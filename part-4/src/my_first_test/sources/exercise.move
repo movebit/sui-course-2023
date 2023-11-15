@@ -7,6 +7,7 @@ module my_first_test::exercise {
 
     // errors
     const ESwordValuesMismatch: u64 = 0;
+    #[allow(unused_const)]
     const ESwordNotBurned: u64 = 1;
 
     // Part 2: Struct definitions
