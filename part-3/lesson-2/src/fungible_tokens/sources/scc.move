@@ -10,7 +10,7 @@ module fungible_tokens::SCC {
     fun init(witness: SCC, ctx: &mut TxContext) {
         let (treasury_cap, metadata) = coin::create_currency<SCC>(
             witness, 
-            9, 
+            2, 
             b"SCC", 
             b"Sui Course Coin", 
             b"", 
@@ -29,6 +29,16 @@ module fungible_tokens::SCC {
 
     public entry fun burn(treasury_cap: &mut TreasuryCap<SCC>, coin: Coin<SCC>) {
         coin::burn(treasury_cap, coin);
+    }
+
+    // For Exercise
+    public fun join(coin: Coin<SCC>, coin2: Coin<SCC>): Coin<SCC> {
+        coin::join(&mut coin, coin2);
+        coin
+    }
+
+    public fun split(coin: &mut Coin<SCC>, amount: u64, ctx: &mut TxContext): Coin<SCC> {
+        coin::split(coin, amount, ctx)
     }
 
     #[test_only]
